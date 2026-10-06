@@ -35,3 +35,5 @@ Built on [`obscenity`](https://github.com/jo3-l/obscenity) (leetspeak, repeats, 
 npm i https://github.com/Hackatoan/game-leaderboard/archive/refs/tags/v1.0.0.tar.gz
 ```
 (tarball URL, so Docker `node:alpine` builds don't need git). `pg` is a peer dependency.
+
+**npm 12+** blocks remote tarball dependencies by default; install/update with `npm install --allow-remote=root <url>`. `npm ci` from an existing lockfile under npm 10 (the `node:20-alpine` images) needs no flag.
