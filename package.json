@@ -1,0 +1,14 @@
+{
+  "name": "@hackatoan/leaderboard",
+  "version": "1.0.0",
+  "description": "Shared nickname leaderboard for the Hackatoa games: Postgres-backed, anti-cheat guards, profanity filter.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": ["index.js", "guards.js", "profanity.js", "index.d.ts", "client"],
+  "scripts": { "test": "node --test test/" },
+  "license": "MIT",
+  "dependencies": { "obscenity": "^0.4.0" },
+  "peerDependencies": { "pg": "^8.0.0" },
+  "peerDependenciesMeta": { "pg": { "optional": true } },
+  "engines": { "node": ">=18" }
+}
